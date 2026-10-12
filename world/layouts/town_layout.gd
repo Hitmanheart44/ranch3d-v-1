@@ -117,53 +117,6 @@ func _building(n: Node3D, kind: String, w: float, d: float, h: float) -> void:
 	Build.box(n, Vector3(0, 1.15, -d / 2.0 - 0.06), Vector3(1.4, 2.3, 0.1), Build.mat("planks012", Vector3.ONE, Color(0.32, 0.22, 0.15)))
 
 
-## Where the moored ship lies: its long side flush against the shore, the whole hull in the water. The waterline is read off the
-## terrain near the old quay; the ship is sized down until its footprint is clear of the land. Returns [centre, yaw, height].
-static func ship_berth(ow: Node) -> Array:
-	var wet := func(x: float, z: float) -> bool: return ow.height(x, z) < Overworld.SEA_Y - 0.3
-	var d0 := (Vector3(Overworld.COVE.x, 0, Overworld.COVE.z) - Vector3(QUAY.x, 0, QUAY.z)).normalized()
-	var shore := Vector3(QUAY.x, 0, QUAY.z)   # the first water along a line from the quay toward the middle of the cove
-	for i in 400:
-		if wet.call(shore.x, shore.z):
-			break
-		shore += d0 * 0.1
-	var gx: float = ow.height(shore.x + 1.0, shore.z) - ow.height(shore.x - 1.0, shore.z)
-	var gz: float = ow.height(shore.x, shore.z + 1.0) - ow.height(shore.x, shore.z - 1.0)
-	var n := Vector3(-gx, 0, -gz).normalized()   # out over the water (downhill)
-	var t := Vector3(-n.z, 0, n.x)               # along the shore
-	var k := 1.0
-	while k > 0.35:
-		var len := 19.53 * k
-		var wid := 4.68 * k
-		# the shore line: how far along n the land reaches at each point along the hull's length
-		var reach := -99.0
-		var low := 99.0
-		var s := -len / 2.0
-		while s <= len / 2.0:
-			var base := shore + t * s
-			var o := -4.0
-			while o < 8.0 and not wet.call(base.x + n.x * o, base.z + n.z * o):
-				o += 0.1
-			reach = maxf(reach, o)
-			low = minf(low, o)
-			s += 1.0
-		if reach - low > 0.9:   # the shore curves away from a straight hull here: a shorter ship is needed to lie flush
-			k -= 0.05
-			continue
-		var side := reach - 0.3                   # seated a little into the bank at the shore's highest point, so the hull lies flush along it
-		var centre := shore + n * (side + wid / 2.0)
-		var clear := true
-		for sx in [-0.5, 0.0, 0.5]:
-			for sz in [0.5, 1.0]:   # the water-facing half of the footprint
-				var q: Vector3 = centre + t * (len * float(sx)) + n * (wid * (float(sz) - 0.5))
-				if not wet.call(q.x, q.z):
-					clear = false
-		if clear:
-			return [Vector3(centre.x, Overworld.SEA_Y - 0.6 * k, centre.z), atan2(t.x, t.z), 16.0 * k]
-		k -= 0.05
-	return [PIER_END + Vector3(1.0, -3.6, 4.2), PI / 2, 16.0]
-
-
 ## Where the street's lamp posts stand (alternating sides): dressing props keep clear of these.
 static func _near_lamp(p: Vector3, lamps: Array) -> bool:
 	for l in lamps:
@@ -216,8 +169,6 @@ func _dressing(ow: Node) -> void:
 	var sp: Vector3 = (top[0] as Vector3) + Vector3(3.2, 0, 0)
 	sp.y = ow.height(sp.x, sp.z) if ow.has_method("height") else sp.y
 	Props.model(self, "sf/signpost_4", sp, 2.3, PI * 0.8, false)
-	var berth := ship_berth(ow)
-	Props.model(self, "ph/ship_pinnace", berth[0], berth[2], berth[1], false)   # moored flush against the shore
 
 
 func _footprint(n: Node3D, w: float, d: float, h: float) -> void:  # invisible collision for a model building
