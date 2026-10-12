@@ -17,6 +17,7 @@ Go to **[Releases](../../releases/latest)** and download the file for your compu
 
 ## In this repository
 
+- [`source` branch](../../tree/source): the Godot project behind this build (plain git, about 460 MB; clone with `git clone --branch source --single-branch`)
 - [`CREDITS.md`](CREDITS.md): the items used
 - [`SUGGESTIONS.md`](SUGGESTIONS.md): suggestions from playtesting
 - [`BUGS.md`](BUGS.md): bug report (to report one, open an issue)
