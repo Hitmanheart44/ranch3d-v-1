@@ -1,6 +1,6 @@
-# Spirit in the Machine: version -1 source
+# Spirit in the Machine: version negative source
 
-The Godot 4.7 project behind the version -1 pre-alpha. Downloads (Linux and Windows) are on the `main` branch's [Releases](https://github.com/Hitmanheart44/spirit-in-the-machine-v-1/releases).
+The Godot 4.7 project behind the version negative pre-alpha. Downloads (Linux and Windows) are on the `main` branch's [Releases](https://github.com/Hitmanheart44/spirit-in-the-machine-version-negative/releases).
 
 Run it: install Godot 4.7.2, then `godot --path . res://world/flow/title.tscn`.
 
