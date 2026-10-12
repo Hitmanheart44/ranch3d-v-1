@@ -1,4 +1,4 @@
-# Spirit in the Machine: Version -1 (pre-alpha concept)
+# Spirit in the Machine: Version Negative (pre-alpha concept)
 
 A playable pre-alpha of a kami-training game with real-time 3D combat. Train a kami, plan its week, and take it into the dungeons.
 
@@ -10,8 +10,8 @@ Go to **[Releases](../../releases/latest)** and download the file for your compu
 
 | Computer | File | Steps |
 |---|---|---|
-| Linux | `SpiritInTheMachine_v-1_Linux.tar.gz` | Extract it, open the folder, run `SpiritInTheMachine.x86_64` (if it will not start, right-click it, Properties, Permissions, allow executing) |
-| Windows | `SpiritInTheMachine_v-1_Windows.zip` | Extract it, open the folder, run `SpiritInTheMachine.exe`. Windows may show a protection prompt because the game is not signed: choose More info, Run anyway |
+| Linux | `SpiritInTheMachine_VersionNegative_Linux.tar.gz` | Extract it, open the folder, run `SpiritInTheMachine.x86_64` (if it will not start, right-click it, Properties, Permissions, allow executing) |
+| Windows | `SpiritInTheMachine_VersionNegative_Windows.zip` | Extract it, open the folder, run `SpiritInTheMachine.exe`. Windows may show a protection prompt because the game is not signed: choose More info, Run anyway |
 
 > **Windows build: untested.** It was exported and checked to be a valid 64-bit Windows program, but it has not been run on a real Windows machine yet. It may not start. Please report what happens in [Issues](../../issues). The Linux build has been played through.
 

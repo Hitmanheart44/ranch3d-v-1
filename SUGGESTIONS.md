@@ -1,4 +1,4 @@
-# Version -1: suggestions
+# Version Negative: suggestions
 
-The owner's suggestions from playtesting version -1, one per line.
+The owner's suggestions from playtesting version negative, one per line.
 

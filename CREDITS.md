@@ -1,6 +1,6 @@
-# Version -1: credits
+# Version Negative: credits
 
-The items used in the version -1 build. This list lives in the repository with the rest of the version -1 record (`SUGGESTIONS.md`, `BUGS.md`). Credits do not appear in the game in any form.
+The items used in the version negative build. This list lives in the repository with the rest of the version negative record (`SUGGESTIONS.md`, `BUGS.md`). Credits do not appear in the game in any form.
 
 ## 3D models
 
@@ -27,7 +27,7 @@ The following are from Sketchfab, licensed CC BY 4.0 (https://creativecommons.or
 - "Japan shrine / temple" by Paulina (CC Attribution) https://sketchfab.com/3d-models/4b1a704d424a490885d39d75e77548dc
 - "Torii" by kazukisakamoto (CC Attribution) https://sketchfab.com/3d-models/7c4d9c93946a41a2a73468b74436705b
 
-Version -1 is a pre-alpha concept. The models, music and sound effects in it are placeholders, and the credited items below are used as placeholder assets that will be replaced.
+Version Negative is a pre-alpha concept. The models, music and sound effects in it are placeholders, and the credited items below are used as placeholder assets that will be replaced.
 
 ## Fonts
 
