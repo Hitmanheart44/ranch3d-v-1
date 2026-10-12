@@ -9,6 +9,7 @@ var cam: Camera3D
 var _t := 0.0
 var _menu: VBoxContainer
 var _confirm: VBoxContainer
+var _delete_confirm: VBoxContainer
 var _options: VBoxContainer
 var _box: VBoxContainer
 var _hide_for_options: Array = []   # the flourish, tagline and spacer: out of the way while Options is open
@@ -92,6 +93,8 @@ func _ui() -> void:
 	var ng := _button(_menu, "NEW GAME", _new_game)
 	if not Save.exists():
 		ng.grab_focus.call_deferred()
+	if Save.exists():
+		_button(_menu, "DELETE SAVE", _ask_delete)
 	_button(_menu, "OPTIONS", _show_options)
 	_button(_menu, "QUIT", get_tree().quit)
 	_confirm = VBoxContainer.new()
@@ -102,6 +105,15 @@ func _ui() -> void:
 	_button(_confirm, "YES, START A NEW RANCH", _start_fresh)
 	_button(_confirm, "BACK", func():
 		_confirm.visible = false
+		_menu.visible = true)
+	_delete_confirm = VBoxContainer.new()
+	_delete_confirm.add_theme_constant_override("separation", 10)
+	_delete_confirm.visible = false
+	box.add_child(_delete_confirm)
+	_delete_confirm.add_child(UIStyle.label("Delete your saved ranch? This cannot be undone.", 20, UIStyle.BAD, "body"))
+	_button(_delete_confirm, "YES, DELETE MY SAVE", _delete_save)
+	_button(_delete_confirm, "BACK", func():
+		_delete_confirm.visible = false
 		_menu.visible = true)
 	_options = VBoxContainer.new()
 	_options.add_theme_constant_override("separation", 10)
@@ -179,6 +191,7 @@ func _button(parent: Control, text: String, fn: Callable) -> Button:
 func _show_options() -> void:
 	_menu.visible = false
 	_confirm.visible = false
+	_delete_confirm.visible = false
 	_options.visible = true
 	for c in _hide_for_options:   # make room: the whole panel must fit on screen with BACK visible
 		(c as Control).visible = false
@@ -232,6 +245,19 @@ func _continue() -> void:
 		_start_fresh()
 		return
 	Scenes.goto(RANCH)
+
+
+func _ask_delete() -> void:
+	_menu.visible = false
+	_delete_confirm.visible = true
+
+
+func _delete_save() -> void:
+	Save.delete()
+	Game.new_game()
+	if Game.has_meta("started"):
+		Game.remove_meta("started")
+	get_tree().reload_current_scene()   # the title comes back without Continue and Delete Save
 
 
 func _new_game() -> void:
