@@ -1,0 +1,7 @@
+.godot/
+build/
+*.tmp
+__pycache__/
+/tools/ai/out/
+/tools/ai/cloud_in/
+/tools/ai/cloud_todo/

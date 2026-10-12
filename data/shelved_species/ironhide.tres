@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 10
+id = &"ironhide"
+display_name = "Ironhide"
+body_class = "bulwark"
+type = "metal"
+bias = PackedInt32Array(4, 3, 5, 1, 1)
+lifespan_weeks = 225
+model_id = "ironclad"
+graft = "beetle_plates"
+anim_profile = "quad"
+anim_wings = false
+anim_hair = false
+anim_chest = false

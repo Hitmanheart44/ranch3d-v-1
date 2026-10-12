@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 3
+id = &"scrapjaw"
+display_name = "Scrapjaw"
+body_class = "brute"
+bias = PackedInt32Array(2, 5, 2, 3, 1)
+lifespan_weeks = 187
+model_id = ""
+graft = "scrap_spikes"
+anim_profile = "quad"
+anim_wings = false
+anim_hair = false
+anim_chest = false
+main_breed = "dog"
+sub_breed = "metal"
+type = "normal"
+type2 = "metal"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BalanceDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://core/balance_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+stat_min = 5
+stat_max = 250
+rank_caps = PackedInt32Array(480, 640, 800, 960, 1110, 1250)
+adventure_totals = PackedInt32Array(340, 480, 590, 700, 900, 1100)
+start_total = 300

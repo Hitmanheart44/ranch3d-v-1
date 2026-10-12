@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CupDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://combat/cup_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"abyss"
+display_name = "Abyssal Cup"
+rank = "A"
+entry_fee = 400
+prize = 3500
+foe_total = 880
+rounds = 3
+ai_skill = 0.7

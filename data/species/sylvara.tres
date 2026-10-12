@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/sylvara.glb" id="m"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 12
+id = &"sylvara"
+display_name = "Sylvara"
+body_class = "caster"
+bias = PackedInt32Array(2, 1, 2, 3, 5)
+lifespan_weeks = 187
+model_id = ""
+graft = "thorn_crown"
+anim_profile = "biped"
+anim_wings = false
+anim_hair = true
+anim_chest = true
+type = "magic"
+type2 = "plant"
+main_breed = "faerie"
+sub_breed = "plant"
+model_scene = ExtResource("m")
+model_size = 0.55
+lore = "A forest faerie kept in the roster for older saves. Light on her feet and fond of high branches."

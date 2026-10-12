@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DrillDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/drill_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"marathon"
+display_name = "Marathon"
+blurb = "Long runs build stamina."
+stat = "hp"
+gain_min = 4
+gain_max = 7
+side_stat = "speed"
+side_gain = 1
+fatigue = 16
+stress = 4
+success = 0.9

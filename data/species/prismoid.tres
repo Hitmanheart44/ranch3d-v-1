@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/prismoid.glb" id="2"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 4
+id = &"prismoid"
+display_name = "Prismoid"
+body_class = "caster"
+bias = PackedInt32Array(2, 1, 3, 2, 5)
+lifespan_weeks = 200
+model_id = ""
+graft = "shard_halo"
+anim_profile = "float"
+anim_wings = false
+anim_hair = false
+anim_chest = false
+type = "metal"
+type2 = ""
+main_breed = "prismoid"
+sub_breed = "prismoid"
+model_scene = ExtResource("2")
+lore = "A cut gem with a happy face, made from the glass of a retired console screen. It reflects whatever mood the room is in."

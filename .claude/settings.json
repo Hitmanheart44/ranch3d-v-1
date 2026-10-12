@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(~/Applications/aigen/.venv/bin/python:*)",
+      "Bash(~/.local/bin/blender:*)",
+      "Bash(godot:*)",
+      "Bash(xdg-open:*)"
+    ]
+  }
+}

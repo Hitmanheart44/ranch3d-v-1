@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 7
+id = &"ravex"
+display_name = "Ravex"
+body_class = "stalker"
+bias = PackedInt32Array(1, 4, 1, 5, 2)
+lifespan_weeks = 137
+model_id = "gustkit"
+graft = "feather_crest"
+anim_profile = "biped"
+anim_wings = false
+anim_hair = false
+anim_chest = false
+type = "normal"
+type2 = ""
+main_breed = "dino"
+sub_breed = "dino"

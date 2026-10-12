@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DrillDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/drill_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"sparring"
+display_name = "Sparring Post"
+blurb = "Hit the post until it breaks."
+stat = "power"
+gain_min = 6
+gain_max = 10
+side_stat = "guard"
+side_gain = 2
+fatigue = 26
+stress = 10
+success = 0.7

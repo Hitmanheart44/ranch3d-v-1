@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CupDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://combat/cup_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"iron"
+display_name = "Iron Gauntlet"
+rank = "C"
+entry_fee = 100
+prize = 1100
+foe_total = 560
+rounds = 3
+ai_skill = 0.5

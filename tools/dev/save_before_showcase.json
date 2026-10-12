@@ -1,0 +1,63 @@
+{
+	"active": 0,
+	"ap": 4,
+	"hall": [],
+	"intro_seen": true,
+	"inventory": {
+		"berries": 3.0,
+		"meat": 1.0
+	},
+	"money": 500,
+	"monsters": [
+		{
+			"adv_exp": 0,
+			"adv_level": 1,
+			"age_weeks": 1,
+			"bonding": 30,
+			"fatigue": 0,
+			"focus": 4,
+			"form": 0,
+			"fullness": 594,
+			"hue": 35,
+			"life_lost": 0.0,
+			"lifespan_weeks": 237,
+			"main_breed": "revenant",
+			"name": "whore",
+			"personality": "loyal",
+			"policy": 3,
+			"quirks": [
+				"hivemind",
+				"glutton"
+			],
+			"rank": "E",
+			"schedule": [],
+			"seed_hex": "79ce2ba66484fcc0",
+			"source": "machine",
+			"stats": {
+				"focus": 44,
+				"guard": 103,
+				"hp": 53,
+				"power": 65,
+				"speed": 35
+			},
+			"stress": 0,
+			"sub_breed": "plant",
+			"type": "dark",
+			"v": 2,
+			"won_rank_cup": false
+		}
+	],
+	"phase": "week",
+	"player_name": "Rio",
+	"ranch_upgrades": [
+		"house",
+		"pen"
+	],
+	"rank": "E",
+	"summoned": [
+		"79ce2ba66484fcc0"
+	],
+	"trainer": "f",
+	"version": 1,
+	"week": 2
+}

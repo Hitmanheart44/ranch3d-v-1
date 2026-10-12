@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DrillDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/drill_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"sprints"
+display_name = "Sprints"
+blurb = "Short bursts, fast feet."
+stat = "speed"
+gain_min = 4
+gain_max = 7
+side_stat = "guard"
+side_gain = -1
+fatigue = 17
+stress = 4
+success = 0.85

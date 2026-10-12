@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"berries"
+display_name = "Wild Berries"
+blurb = "Light snack."
+cost = 10
+food = true
+fullness = 180
+form = 0
+fatigue = 0
+stress = -40
+loyalty = 1
+stat = "none"
+stat_gain = 0

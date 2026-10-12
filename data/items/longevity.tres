@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"longevity"
+display_name = "Kami Elixir"
+blurb = "Rare medicine. Restores about three months of life."
+cost = 4000
+food = false
+fullness = 0
+form = 0
+fatigue = 0
+stress = 0
+loyalty = 0
+stat = "none"
+stat_gain = 0

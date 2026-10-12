@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/vexa.glb" id="m"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 11
+id = &"vexa"
+display_name = "Vexa"
+body_class = "duelist"
+bias = PackedInt32Array(2, 3, 1, 4, 3)
+lifespan_weeks = 175
+model_id = ""
+graft = "bat_wings"
+anim_profile = "biped"
+anim_wings = true
+anim_hair = true
+anim_chest = true
+type = "magic"
+type2 = "dark"
+main_breed = "faerie"
+sub_breed = "dark"
+model_scene = ExtResource("m")
+model_size = 0.55
+lore = "A faerie of the dark court, horned and bat-winged. She loves a challenge and hates being told what to do. Her magic bends light into snares."

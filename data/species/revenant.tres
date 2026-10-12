@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/revenant.glb" id="m"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 8
+id = &"revenant"
+display_name = "Revenant"
+body_class = "bulwark"
+bias = PackedInt32Array(3, 3, 5, 1, 2)
+lifespan_weeks = 237
+model_id = "ironclad"
+graft = "ghost_flame"
+anim_profile = "biped"
+anim_wings = false
+anim_hair = false
+anim_chest = false
+type = "dark"
+type2 = ""
+main_breed = "reaper"
+sub_breed = "reaper"
+model_scene = ExtResource("m")
+lore = "A reaper spirit wearing a pale grin. It appears wherever machines have run for decades without rest. Quiet, patient, and surprisingly gentle."

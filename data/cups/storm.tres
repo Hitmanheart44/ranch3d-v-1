@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CupDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://combat/cup_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"storm"
+display_name = "Storm Crown"
+rank = "B"
+entry_fee = 200
+prize = 2000
+foe_total = 720
+rounds = 3
+ai_skill = 0.6

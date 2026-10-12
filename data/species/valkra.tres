@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/valkra.glb" id="m"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 13
+id = &"valkra"
+body_class = "duelist"
+bias = PackedInt32Array(2, 4, 2, 4, 2)
+lifespan_weeks = 175
+model_id = ""
+graft = "winged_helm"
+anim_profile = "biped"
+anim_wings = true
+anim_hair = true
+anim_chest = true
+display_name = "Valkyria"
+type = "light"
+type2 = ""
+main_breed = "priest"
+sub_breed = "priest"
+model_scene = ExtResource("m")
+model_size = 0.78
+lore = "A priestess kami of old shrine rites, born from a sun-bleached prayer wheel. She heals, shields, and lectures. Her halo dims when she is tired."

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 9
+id = &"wyrmhorn"
+display_name = "Wyrmhorn"
+body_class = "brute"
+type = "fire"
+bias = PackedInt32Array(4, 4, 3, 1, 2)
+lifespan_weeks = 200
+model_id = "tidewyrm"
+graft = "ram_horns"
+anim_profile = "quad"
+anim_wings = true
+anim_hair = false
+anim_chest = false

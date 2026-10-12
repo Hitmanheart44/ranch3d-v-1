@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/nysse.glb" id="m"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 14
+id = &"nysse"
+display_name = "Nysse"
+body_class = "caster"
+bias = PackedInt32Array(3, 2, 2, 2, 4)
+lifespan_weeks = 187
+model_id = ""
+graft = "coral_fins"
+anim_profile = "float"
+anim_wings = false
+anim_hair = true
+anim_chest = true
+type = "water"
+type2 = ""
+main_breed = "mermaid"
+sub_breed = "mermaid"
+model_scene = ExtResource("m")
+model_size = 0.72
+lore = "A river naga that drifted down from the mountain springs. Calm, watchful and fiercely loyal once she trusts you. Her tail hums when she is happy."

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/item_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"emberoil"
+display_name = "Ember Oil"
+blurb = "Rubbed into sore muscles. Removes fatigue."
+cost = 50
+food = false
+fullness = 0
+form = 0
+fatigue = -300
+stress = 0
+loyalty = 0
+stat = "none"
+stat_gain = 0

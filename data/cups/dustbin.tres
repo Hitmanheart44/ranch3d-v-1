@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CupDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://combat/cup_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"dustbin"
+display_name = "Dustbin Cup"
+rank = "E"
+entry_fee = 0
+prize = 300
+foe_total = 300
+rounds = 3
+ai_skill = 0.3

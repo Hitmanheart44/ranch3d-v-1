@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="SpeciesDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://monsters/species_def.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/models/plant.glb" id="m"]
+
+[resource]
+script = ExtResource("1")
+roster_order = 16
+id = &"plant"
+display_name = "Plant"
+body_class = "caster"
+bias = PackedInt32Array(2, 1, 3, 2, 5)
+lifespan_weeks = 200
+model_id = ""
+graft = "shard_halo"
+anim_wings = false
+anim_hair = false
+anim_chest = false
+type = "plant"
+type2 = ""
+main_breed = "plant"
+sub_breed = "plant"
+anim_profile = "float"
+model_scene = ExtResource("m")
+lore = "A turnip-bulbed sprite wearing star-lily flowers. Slow to anger and slow to grow, but nothing outlasts it."

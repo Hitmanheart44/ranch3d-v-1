@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://combat/move_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"blast"
+display_name = "Blast"
+kind = "projectile"
+atk_stat = "focus"
+atk_mult = 1.1
+def_mult = 0.2
+use_type = true
+windup = 0.15
+active = 0.05
+recovery = 0.2
+cooldown = 1.6
+reach = 22.0
+radius = 0.5
+proj_speed = 14.0
+lunge = 0.0
+knockback = 4.0
+hitstun = 0.2
+hitstop = 0.045

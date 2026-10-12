@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DrillDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ranch/drill_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"brace"
+display_name = "Brace Drills"
+blurb = "Take hits, stand firm."
+stat = "guard"
+gain_min = 4
+gain_max = 7
+side_stat = "none"
+side_gain = 0
+fatigue = 16
+stress = 6
+success = 0.85
