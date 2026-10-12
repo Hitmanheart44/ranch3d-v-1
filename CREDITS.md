@@ -27,7 +27,7 @@ The following are from Sketchfab, licensed CC BY 4.0 (https://creativecommons.or
 - "Japan shrine / temple" by Paulina (CC Attribution) https://sketchfab.com/3d-models/4b1a704d424a490885d39d75e77548dc
 - "Torii" by kazukisakamoto (CC Attribution) https://sketchfab.com/3d-models/7c4d9c93946a41a2a73468b74436705b
 
-Monster and character models, music and sound effects in version -1 are placeholders.
+Version -1 is a pre-alpha concept. The models, music and sound effects in it are placeholders, and the credited items below are used as placeholder assets that will be replaced.
 
 ## Fonts
 

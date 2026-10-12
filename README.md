@@ -1,8 +1,8 @@
 # Spirit in the Machine: Version -1 (pre-alpha concept)
 
-A playable pre-alpha of a Monster Rancher-style monster-raising game with real-time 3D combat. Raise a monster on your ranch, plan its week, train it, and take it into the dungeons.
+A playable pre-alpha of a kami-training game with real-time 3D combat. Train a kami, plan its week, and take it into the dungeons.
 
-**Source and project documents:** https://github.com/Hitmanheart44/ranch3d
+**Source and project documents:** https://github.com/Hitmanheart44/spirit-in-the-machine
 
 ## Download
 
@@ -21,4 +21,6 @@ Go to **[Releases](../../releases/latest)** and download the file for your compu
 - [`SUGGESTIONS.md`](SUGGESTIONS.md): suggestions from playtesting
 - [`BUGS.md`](BUGS.md): bug report (to report one, open an issue)
 
-All rights reserved. This is a pre-alpha concept; models, music and sound in it are placeholders.
+All rights reserved.
+
+**Placeholders and credits.** This is a pre-alpha concept. Many models, and the music and sound, are third-party placeholder assets that will be replaced. Those that need credit are listed in [`CREDITS.md`](CREDITS.md).
