@@ -206,7 +206,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		match_finished.emit(res)
 		if Scenes.params.has("return_to"):
 			var back := {"cup_result": res}
-			for k in ["cup", "fighter", "boss"]:  # pass through what the caller needs to resume
+			for k in ["cup", "fighter", "boss", "kind", "event"]:  # pass through what the caller needs to resume
 				if Scenes.params.has(k):
 					back[k] = Scenes.params[k]
 			Scenes.goto(Scenes.params["return_to"], back)
