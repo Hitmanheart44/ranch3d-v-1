@@ -176,6 +176,6 @@ func save_case(first: MonsterData) -> void:
 	Game.run = {}
 	check(Save.read(), "read reset session through real Save")
 	check(json_data(Game.to_dict()) == json_data(expected) and Game.run.is_empty(), "reset save round trip retains only current defaults")
-	check(Game.seen == expected["seen"] and Game.pair_bonds.is_empty(), "no old discoveries or bonds replay after reload")
+	check(json_data(Game.seen) == json_data(expected["seen"]) and Game.pair_bonds.is_empty(), "no old discoveries or bonds replay after reload")
 	check(Game.active() == null if first == null else Game.active().seed_hex == first.seed_hex, "reloaded optional first identity")
 	print("VN-03 CASE Save/Continue round trip initial=", first != null)
